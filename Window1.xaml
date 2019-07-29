@@ -1,0 +1,25 @@
+﻿<Window x:Class="Задание_практика.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задание_практика"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        Title="Таблица" Height="450" Width="640">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="№ Пункта" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <TextBlock Text="Название параметра" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <ComboBox Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <Button Content="Список значений параметра" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+    </Grid>
+</Window>
