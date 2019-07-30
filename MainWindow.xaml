@@ -23,9 +23,9 @@
         <StackPanel>
             <TextBlock Text="Список:" Margin="5"/>
             <Border CornerRadius="2" BorderThickness="2" BorderBrush="Gray"
-                UseLayoutRounding="True" Margin="5">
+                UseLayoutRounding="True" Margin="5" >
             <ListBox x:Name="listbox" Grid.Row="0" Grid.Column="0" MinHeight="155" BorderThickness="0" Margin="1" 
-                     SelectionChanged="Listbox_SelectionChanged"/>
+                     SelectionChanged="Listbox_SelectionChanged" />
         </Border>
         </StackPanel>
         <GroupBox Header="Параметр" Grid.Row="1" Grid.Column="0" Margin="5">
