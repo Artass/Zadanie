@@ -23,5 +23,20 @@ namespace Задание_практика
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            listbox.Items.Add("Проверка");
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            listbox.Items.RemoveAt(listbox.SelectedIndex);
+        }
+
+        private void Listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

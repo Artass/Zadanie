@@ -14,12 +14,18 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="35"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="22"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="№ Пункта" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
-        <TextBlock Text="Название параметра" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
-        <ComboBox Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
-        <Button Content="Список значений параметра" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <TextBlock Text="№ Пункта" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <TextBlock Text="Название параметра" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <ComboBox Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <Button Content="Список значений параметра" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="1" Background="WhiteSmoke"/>
+        <Button Grid.Column="0" Grid.Row="0" Content="+" Width="20" Height="18" 
+                Background="White" BorderThickness="0" HorizontalAlignment="Left" Margin="3" Click="Button_Click"/>
+        <Button Grid.Column="0" Grid.Row="0" Content="X" Width="20" Height="18" 
+                Background="White" BorderThickness="0" HorizontalAlignment="Right" Margin="3" Click="Button_Click_1"/>
+        <ListBox x:Name="listbox" Grid.Row="2" Grid.ColumnSpan="4" SelectionChanged="Listbox_SelectionChanged"/>
     </Grid>
 </Window>
